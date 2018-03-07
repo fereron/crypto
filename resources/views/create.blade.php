@@ -40,11 +40,11 @@
                         </div>
                         <div class="col-md-4 mb-3">
                             <label for="price">Price</label>
-                            <input type="number" class="form-control" id="price" step="0.0001" name="trade[1][price]">
+                            <input type="number" class="form-control" step="any" id="price"  name="trade[1][price]">
                         </div>
                         <div class="col-md-4 mb-3">
                             <label for="value">Purchase amount</label>
-                            <input type="number" class="form-control" id="value" name="trade[1][value]">
+                            <input type="number" class="form-control" step="any" id="value" name="trade[1][value]">
                         </div>
                     </div>
                     <hr class="mb-4">
@@ -61,11 +61,11 @@
                         </div>
                         <div class="col-md-4 mb-3">
                             <label for="price">Price</label>
-                            <input type="number" class="form-control" id="price" step="0.0001" name="trade[2][price]">
+                            <input type="number" class="form-control" id="price" step="any" name="trade[2][price]">
                         </div>
                         <div class="col-md-4 mb-3">
                             <label for="value">Purchase amount</label>
-                            <input type="number" class="form-control" id="value" name="trade[2][value]">
+                            <input type="number" class="form-control" step="any" id="value" name="trade[2][value]">
                         </div>
                     </div>
                     <hr class="mb-4">
@@ -73,7 +73,7 @@
                     <div class="row">
                         <div class="col-md-4 mb-3">
                             <label for="currencies">Currencies</label>
-                            <select class="custom-select d-block w-100" id="currencies" name="trade[3][market]">
+                            <select class="custom-select d-block w-100"  id="currencies" name="trade[3][market]">
                                 <option value="">Choose...</option>
                                 @foreach($markets as $market)
                                     <option value="{{ $market->id }}">{{ $market->MarketName }}</option>
@@ -82,11 +82,11 @@
                         </div>
                         <div class="col-md-4 mb-3">
                             <label for="price">Price</label>
-                            <input type="number" class="form-control" id="price" step="0.0001" name="trade[3][price]">
+                            <input type="number" class="form-control" step="any" id="price" name="trade[3][price]">
                         </div>
                         <div class="col-md-4 mb-3">
                             <label for="value">Purchase amount</label>
-                            <input type="number" class="form-control" id="value" name="trade[3][value]">
+                            <input type="number" class="form-control" step="any" id="value" name="trade[3][value]">
                         </div>
                     </div>
                     <hr class="mb-4">
@@ -103,11 +103,11 @@
                         </div>
                         <div class="col-md-4 mb-3">
                             <label for="price">Price</label>
-                            <input type="number" class="form-control" id="price" step="0.0001" name="trade[4][price]">
+                            <input type="number" class="form-control" step="any" id="price"  name="trade[4][price]">
                         </div>
                         <div class="col-md-4 mb-3">
                             <label for="value">Purchase amount</label>
-                            <input type="number" class="form-control" id="value" name="trade[4][value]">
+                            <input type="number" class="form-control" step="any" id="value" name="trade[4][value]">
                         </div>
                     </div>
                     <hr class="mb-4">
@@ -124,11 +124,11 @@
                         </div>
                         <div class="col-md-4 mb-3">
                             <label for="price">Price</label>
-                            <input type="number" class="form-control" id="price" step="0.0001" name="trade[5][price]">
+                            <input type="number" class="form-control" step="any" id="price"  name="trade[5][price]">
                         </div>
                         <div class="col-md-4 mb-3">
                             <label for="value">Purchase amount</label>
-                            <input type="number" class="form-control" id="value" name="trade[5][value]">
+                            <input type="number" class="form-control" step="any" id="value" name="trade[5][value]">
                         </div>
                     </div>
                     <hr class="mb-4">
@@ -138,7 +138,6 @@
             </div>
         </div>
     </div>
-
 
     <br>
 @endsection

@@ -17,7 +17,7 @@ class PortfolioController extends Controller
 
         foreach ($portfolios as $portfolio) {
             foreach ($portfolio->trades as $trade) {
-                $portfolio->profit += $trade->price / $trade->market->rate* $trade->value * 100;
+                $portfolio->profit += (float)$trade->price / (float)$trade->market->rate* (float)$trade->value * 100;
             }
         }
 

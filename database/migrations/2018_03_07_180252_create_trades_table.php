@@ -16,7 +16,7 @@ class CreateTradesTable extends Migration
         Schema::create('trades', function (Blueprint $table) {
             $table->unsignedInteger('portfolio_id');
             $table->unsignedInteger('market_id');
-            $table->float('price');
+            $table->string('price');
             $table->string('value');
             $table->timestamps();
         });
